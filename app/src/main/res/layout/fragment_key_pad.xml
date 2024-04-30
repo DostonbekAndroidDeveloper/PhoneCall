@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:lines="@integer/material_motion_duration_long_1"
+        app:layout_constraintBottom_toTopOf="@id/phone_layout"
+        android:layout_margin="14dp"
+        android:textStyle="normal"
+        android:maxLength="20"
+
+        android:textColorHighlight="@color/black"
+
+        android:textSize="34sp"
+        android:id="@+id/enterNumber"
+        app:layout_constraintRight_toRightOf="@id/phone_layout"
+        app:layout_constraintLeft_toLeftOf="@id/phone_layout"
+        android:autofillHints=""
+        android:keyboardNavigationCluster="true"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/phone_layout"
+        app:layout_constraintBottom_toTopOf="@id/phone_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_one"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/number_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_two"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toRightOf="@id/number_one"
+            app:layout_constraintRight_toLeftOf="@id/number_three"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_three"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="3"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toRightOf="@id/number_two"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_four"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="4"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/number_one"
+            app:layout_constraintRight_toRightOf="@id/number_one"
+            app:layout_constraintTop_toBottomOf="@id/number_one" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_five"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="5"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/number_two"
+            app:layout_constraintRight_toRightOf="@id/number_two"
+            app:layout_constraintTop_toBottomOf="@id/number_two" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_six"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="6"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/number_three"
+            app:layout_constraintRight_toRightOf="@id/number_three"
+            app:layout_constraintTop_toBottomOf="@id/number_three" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_seven"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="7"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/number_four"
+            app:layout_constraintRight_toRightOf="@id/number_four"
+            app:layout_constraintTop_toBottomOf="@id/number_four" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_eight"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="8"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/number_five"
+            app:layout_constraintRight_toRightOf="@id/number_five"
+            app:layout_constraintTop_toBottomOf="@id/number_five" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/number_nine"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="9"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/number_six"
+            app:layout_constraintRight_toRightOf="@id/number_six"
+            app:layout_constraintTop_toBottomOf="@id/number_six" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/star"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="*"
+
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/number_seven"
+            app:layout_constraintRight_toRightOf="@id/number_seven"
+            app:layout_constraintTop_toBottomOf="@id/number_seven" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/number_zero"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            app:cardCornerRadius="36sp"
+            android:gravity="center"
+
+
+
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/number_eight"
+            app:layout_constraintRight_toRightOf="@id/number_eight"
+            app:layout_constraintTop_toBottomOf="@id/number_eight" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:text="+"
+                android:layout_gravity="center|bottom"/>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hashtag"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp" android:backgroundTint="#FFFFFF"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="#"
+            android:textSize="38sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/number_nine"
+            app:layout_constraintRight_toRightOf="@id/number_nine"
+            app:layout_constraintTop_toBottomOf="@id/number_nine" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/phone_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/call"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="TODO" />
+    <ImageView
+        android:layout_width="70dp"
+
+        android:layout_height="70dp"
+        android:id="@+id/delete_btn"
+        app:layout_constraintBottom_toBottomOf="@id/phone_btn"
+        app:layout_constraintLeft_toRightOf="@id/phone_btn"
+        android:layout_marginStart="45dp"
+        android:src="@drawable/backspace"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="TODO" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

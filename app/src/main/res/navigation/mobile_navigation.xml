@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/keyPadFragment">
+    <fragment
+        android:id="@+id/keyPadFragment"
+        android:name="com.dostonbek.phonecall.KeyPadFragment"
+        android:label="fragment_key_pad"
+        tools:layout="@layout/fragment_key_pad" >
+        <action
+            android:id="@+id/action_keyPadFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+        <action
+            android:id="@+id/action_keyPadFragment_to_recentFragment"
+            app:destination="@id/recentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recentFragment"
+        android:name="com.dostonbek.phonecall.RecentFragment"
+        android:label="fragment_recent"
+        tools:layout="@layout/fragment_recent" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.dostonbek.phonecall.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+</navigation>
